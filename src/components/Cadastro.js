@@ -20,7 +20,7 @@ class Cadastro extends Component{
                     label="Quantidade"
                     placeholder="Digite a quantidade"
                 />
-                <Button bsStyle="primary" type="submit" onClick={() => this.props.addToItems(this.props.item)}>Primary</Button>
+                <Button bsStyle="primary" type="submit" onClick={() => this.props.addToItems([this.props.item, this.props.qtdString])}>Adicionar</Button>
             </Form>
         );
     }

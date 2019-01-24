@@ -7,7 +7,7 @@ class Carrinho extends Component {
     renderListItems = () => {
         if(this.props.items){
             return this.props.items.items.map((values, index) => {
-                return <ListGroupItem key={index}>{values}</ListGroupItem>
+                return <ListGroupItem key={index}>{values.item} - {values.qtd}</ListGroupItem>
             })
         }else{
             return <div>...</div>

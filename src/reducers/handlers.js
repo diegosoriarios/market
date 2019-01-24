@@ -30,12 +30,12 @@ export function itemString(state = initialState, action) {
 }
 
 export function addToItems(state = initialState, action){
-    console.log(action)
+    console.log(state)
     switch(action.type){
         case 'ADD_TO_ITEM':
             return {
                 ...state,
-                items: state.items.concat(action.items.item)    
+                items: state.items.concat({item: action.items[0].item, qtd: action.items[1].qtd})    
             }
         default:
             return state;

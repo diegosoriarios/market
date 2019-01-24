@@ -7,7 +7,7 @@ class NavBar extends Component {
             <Navbar inverse collapseOnSelect>
                 <Navbar.Header>
                     <Navbar.Brand>
-                    <a href="#brand">React-Bootstrap</a>
+                    <a href="#brand">Nome</a>
                     </Navbar.Brand>
                     <Navbar.Toggle />
                 </Navbar.Header>
@@ -25,7 +25,7 @@ class NavBar extends Component {
                     </Nav>
                     <Nav pullRight>
                     <NavItem eventKey={1} href="#">
-                        Link Right
+                        Link
                     </NavItem>
                     <NavDropdown eventKey={2} title="Dropdown" id="basic-nav-dropdown">
                         <MenuItem eventKey={2.1}>Action</MenuItem>
