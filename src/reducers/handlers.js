@@ -34,7 +34,6 @@ export function itemString(state = initialState, action) {
 }
 
 export function usernameValue(state = initialState, action){
-    console.log(action.username)
     switch(action.type){
         case USERNAME:
             return {

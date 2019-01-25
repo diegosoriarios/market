@@ -30,7 +30,7 @@ class App extends Component {
       return (
         <Grid>
           <Row className="show-grid">
-          <Col xs={6} xsOffset={4}>
+          <Col xs={8} xsOffset={4}>
             <Login />
           </Col>
           </Row>
