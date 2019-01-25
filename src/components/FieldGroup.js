@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import { FormGroup, ControlLabel, FormControl, Col } from 'react-bootstrap'
 import { connect } from 'react-redux';
-import { itemString, quantidadeString, addToItems } from '../actions/handlers';
+import { itemString, quantidadeString, addToItems, usernameValue, passwordValue } from '../actions/handlers';
 
 class FieldGroup extends Component {
     handlerChange = e => {
@@ -11,6 +11,12 @@ class FieldGroup extends Component {
                 break;
             case 'Quantidade':
                 this.props.quantidadeString(e.target.value);
+                break;
+            case 'Email':
+                this.props.usernameValue(e.target.value);
+                break;
+            case 'Password':
+                this.props.usernameValue(e.target.value);
                 break;
             default:
                 console.log('ok')
@@ -44,7 +50,9 @@ const mapDispatchToProps = (dispatch) => {
     return {
         itemString: (item) => dispatch(itemString(item)),
         quantidadeString: (item) => dispatch(quantidadeString(item)),
-        addToItems: (item) => dispatch(addToItems(item))
+        addToItems: (item) => dispatch(addToItems(item)),
+        usernameValue: (item) => dispatch(usernameValue(item)),
+        passwordValue: (item) => dispatch(passwordValue(item)),
     };
 };
 

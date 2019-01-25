@@ -18,3 +18,24 @@ export function addToItems(value){
         items: value
     }
 }
+
+export function usernameValue(value){
+    return{
+        type: 'USERNAME',
+        username: value
+    }
+}
+
+export function passwordValue(value){
+    return{
+        type: 'PASSWORD',
+        password: value
+    }
+}
+
+export function userIsLogged(bool){
+    return {
+        type: 'USER_IS_LOGGED',
+        isLogged: bool
+    }
+}
