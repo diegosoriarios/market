@@ -16,7 +16,7 @@ class FieldGroup extends Component {
                 this.props.usernameValue(e.target.value);
                 break;
             case 'Password':
-                this.props.usernameValue(e.target.value);
+                this.props.passwordValue(e.target.value);
                 break;
             default:
                 console.log('ok')

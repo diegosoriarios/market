@@ -33,9 +33,27 @@ export function passwordValue(value){
     }
 }
 
+export function dispatchError(bool){
+    return {
+        type: 'ERROR',
+        error: bool
+    }
+}
+
 export function userIsLogged(bool){
     return {
         type: 'USER_IS_LOGGED',
         isLogged: bool
+    }
+}
+
+export function checkLogin(username, password){
+    console.log(username)
+    return (dispatch) => {
+        if(password === 123 && username === 'teste'){
+            dispatch(userIsLogged(true))
+        }else{
+            dispatch(dispatchError(true))
+        }
     }
 }

@@ -5,7 +5,8 @@ import {
     addToItems, 
     userIsLogged,
     usernameValue,
-    passwordValue
+    passwordValue,
+    dispatchError
 } from './handlers'
 
 export default combineReducers({
@@ -14,5 +15,6 @@ export default combineReducers({
     addToItems,
     userIsLogged,
     usernameValue,
-    passwordValue
+    passwordValue,
+    dispatchError
 });

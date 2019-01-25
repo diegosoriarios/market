@@ -1,4 +1,4 @@
-const initialState = {
+let initialState = {
     item: 0,
     qtd: 0,
     items: [],
@@ -47,7 +47,7 @@ export function usernameValue(state = initialState, action){
 export function passwordValue(state = initialState, action) {
     switch(action.type){
         case 'PASSWORD':
-            return {
+            return { 
                 ...state,
                 password: action.password
             }
@@ -65,6 +65,15 @@ export function addToItems(state = initialState, action){
             }
         default:
             return state;
+    }
+}
+
+export function dispatchError(state = false, action){
+    switch(action.type){
+        case 'ERROR':
+            return action.error
+        default:
+            return state
     }
 }
 
