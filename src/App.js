@@ -28,13 +28,16 @@ class App extends Component {
       );
     }else{
       return (
-        <Grid>
+        <div>
+          <NavBar />
+          <Grid>
           <Row className="show-grid">
           <Col xs={8} xsOffset={4}>
             <Login />
           </Col>
           </Row>
         </Grid>
+        </div>
       )
     }
   }
