@@ -6,7 +6,8 @@ import {
     userIsLogged,
     usernameValue,
     passwordValue,
-    dispatchError
+    dispatchError,
+    isLoading
 } from './handlers'
 
 export default combineReducers({
@@ -16,5 +17,6 @@ export default combineReducers({
     userIsLogged,
     usernameValue,
     passwordValue,
-    dispatchError
+    dispatchError,
+    isLoading
 });
