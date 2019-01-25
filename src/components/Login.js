@@ -35,7 +35,7 @@ class Login extends Component{
                     type="password" 
                     placeholder="Password"
                 />
-                <Button bsStyle="primary" type="submit" onClick={() => this.props.checkLogin(this.props.username, this.props.password)}>Login</Button>
+                <Button bsStyle="primary" type="submit" onClick={() => this.props.checkLogin(this.props.username.username, this.props.password.password)}>Login</Button>
             </Form>
         );
     }

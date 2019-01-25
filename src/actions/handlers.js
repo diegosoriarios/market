@@ -48,9 +48,8 @@ export function userIsLogged(bool){
 }
 
 export function checkLogin(username, password){
-    console.log(username)
     return (dispatch) => {
-        if(password === 123 && username === 'teste'){
+        if(password === '123' && username === 'teste'){
             dispatch(userIsLogged(true))
         }else{
             dispatch(dispatchError(true))
