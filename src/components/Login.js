@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import FieldGroup from './FieldGroup';
-import { Form, Button, Alert } from 'react-bootstrap';
+import { Form, Button, Alert, Col } from 'react-bootstrap';
 import { connect } from 'react-redux';
 import { itemString, quantidadeString, addToItems, userIsLogged, dispatchError, checkLogin } from '../actions/handlers';
 
@@ -35,7 +35,14 @@ class Login extends Component{
                     type="password" 
                     placeholder="Password"
                 />
-                <Button bsStyle="primary" type="submit" onClick={() => this.props.checkLogin(this.props.username.username, this.props.password.password)}>Login</Button>
+                <Col xs={6} xsOffset={3}>
+                    <Button 
+                        bsStyle="primary" 
+                        type="submit" 
+                        onClick={() => this.props.checkLogin(this.props.username.username, this.props.password.password)}
+                    >Login
+                    </Button>
+                </Col>
             </Form>
         );
     }
