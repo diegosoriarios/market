@@ -16,7 +16,7 @@ class NavBar extends Component {
                 <Navbar.Collapse>
                     <Nav>
                     <NavItem eventKey={1} href="#">
-                        Link
+                        Estoque
                     </NavItem>
                     <NavItem eventKey={2} href="#">
                         Link
