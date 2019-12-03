@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:market/pages/FirstTab.dart';
-import 'package:market/pages/SecondTab.dart';
-import 'package:market/pages/ThirdTab.dart';
+import 'package:market/pages/QRCode.dart';
+import 'package:market/pages/Barcode.dart';
+import 'package:market/pages/MainTab.dart';
 
 void main() {
   runApp(MaterialApp(
@@ -39,7 +39,7 @@ class MyHomeState extends State<MyHome> with SingleTickerProviderStateMixin {
         backgroundColor: Colors.blue,
       ),
       body: TabBarView(
-        children: <Widget>[FirstTab(), SecondTab(), ThirdTab()],
+        children: <Widget>[MainTab(), Barcode(), QRCode()],
         controller: controller,
       ),
       bottomNavigationBar: Material(

@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-class ThirdTab extends StatelessWidget {
+class MainTab extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(

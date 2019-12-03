@@ -23,6 +23,7 @@ dependencies:
     git:
       url: https://github.com/kiatuki/animated_qr_code_scanner.git
       ref: v0.1.2
+  flutter_barcode_scanner: ^0.1.7
 
 
   # The following adds the Cupertino Icons font to your application.

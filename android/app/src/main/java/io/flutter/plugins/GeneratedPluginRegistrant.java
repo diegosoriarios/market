@@ -2,6 +2,7 @@ package io.flutter.plugins;
 
 import io.flutter.plugin.common.PluginRegistry;
 import com.example.animated_qr_code_scanner.AnimatedQrCodeScannerPlugin;
+import com.amolg.flutterbarcodescanner.FlutterBarcodeScannerPlugin;
 import net.touchcapture.qr.flutterqr.FlutterQrPlugin;
 
 /**
@@ -13,6 +14,7 @@ public final class GeneratedPluginRegistrant {
       return;
     }
     AnimatedQrCodeScannerPlugin.registerWith(registry.registrarFor("com.example.animated_qr_code_scanner.AnimatedQrCodeScannerPlugin"));
+    FlutterBarcodeScannerPlugin.registerWith(registry.registrarFor("com.amolg.flutterbarcodescanner.FlutterBarcodeScannerPlugin"));
     FlutterQrPlugin.registerWith(registry.registrarFor("net.touchcapture.qr.flutterqr.FlutterQrPlugin"));
   }
 

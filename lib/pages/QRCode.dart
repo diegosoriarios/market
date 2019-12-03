@@ -2,7 +2,7 @@ import 'package:animated_qr_code_scanner/AnimatedQRViewController.dart';
 import 'package:flutter/material.dart';
 import 'package:animated_qr_code_scanner/animated_qr_code_scanner.dart';
 
-class FirstTab extends StatelessWidget {
+class QRCode extends StatelessWidget {
   final AnimatedQRViewController controller = AnimatedQRViewController();
   @override
   Widget build(BuildContext context) {
