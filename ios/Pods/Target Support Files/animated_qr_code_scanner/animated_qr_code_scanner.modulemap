@@ -1,0 +1,6 @@
+framework module animated_qr_code_scanner {
+  umbrella header "animated_qr_code_scanner-umbrella.h"
+
+  export *
+  module * { export * }
+}

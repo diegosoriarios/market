@@ -1,6 +1,0 @@
-{
-    "users": [
-      { "id": 1, "username": "teste@teste.com", "password": "teste" },
-      { "id": 2, "username": "user@teste.com", "password": "user" }
-    ]
-  }

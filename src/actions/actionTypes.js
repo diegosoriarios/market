@@ -1,9 +1,0 @@
-export const ITEM_STRING = 'ITEM_STRING';
-export const QTD_STRING = 'QUANTIDADE_STRING';
-export const ADD_TO_ITEM = 'ADD_TO_ITEM';
-export const USERNAME = 'USERNAME';
-export const PASSWORD = 'PASSWORD';
-export const ERROR = 'ERROR';
-export const USER_IS_LOGGED = 'USER_IS_LOGGED';
-export const IS_LOADING = 'IS_LOADING';
-export const URL = 'http://localhost:3004'
